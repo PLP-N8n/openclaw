@@ -1,0 +1,15 @@
+retrieval:
+  top_k: 12
+  dedupe:
+    enabled: true
+    key_fields: ["fingerprint", "source", "chunk_id"]
+  decay:
+    enabled: true
+    half_life_days: 14
+    min_weight: 0.2
+  jit:
+    enabled: true
+    only_on:
+      - "decision"
+      - "high_risk_action"
+      - "operator_query"

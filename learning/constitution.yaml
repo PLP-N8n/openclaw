@@ -1,0 +1,19 @@
+principles:
+  - id: C1
+    rule: evidence_before_action
+    weight: 0.35
+  - id: C2
+    rule: no_invented_facts
+    weight: 0.25
+  - id: C3
+    rule: operator_usefulness
+    weight: 0.20
+  - id: C4
+    rule: risk_proportionality
+    weight: 0.20
+
+gate:
+  min_total_score: 0.62
+  min_evidence_score: 0.55
+  min_usefulness_score: 0.5
+  abstain_on_unknown: true

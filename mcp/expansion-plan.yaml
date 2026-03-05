@@ -1,0 +1,28 @@
+servers:
+  - name: github-mcp
+    priority: high
+    use_cases:
+      - repo triage
+      - issue/PR automation
+      - CI diagnostics
+  - name: web-search-mcp
+    priority: high
+    use_cases:
+      - fresh evidence retrieval
+      - source-grounded research
+  - name: db-mcp
+    priority: high
+    use_cases:
+      - structured memory queries
+      - analytics and KPI backfills
+
+rollout_order:
+  - github-mcp
+  - web-search-mcp
+  - db-mcp
+
+readiness_checks:
+  - auth configured
+  - latency budget acceptable
+  - audit logging enabled
+  - fallback path defined

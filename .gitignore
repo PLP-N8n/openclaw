@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+memory/qdrant_data/
+benchmarks/results.jsonl
+dashboard/latest-kpis.json
+.env

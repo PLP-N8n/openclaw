@@ -1,0 +1,14 @@
+policy:
+  daily_cap_usd: 5.0
+  near_limit_ratio: 0.85
+  cloud_only_for_high_stakes: true
+  downgrade_lane_when_near: local-strong
+  downgrade_lane_when_capped: local-fast
+
+batch_mode:
+  heavy_token_threshold: 12000
+  heavy_task_types:
+    - benchmark
+    - backfill
+    - bulk_ingest
+    - long_summarization

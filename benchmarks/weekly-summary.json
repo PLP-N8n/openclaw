@@ -1,0 +1,9 @@
+{
+  "ts": "2026-02-22T23:05:44.073387+00:00",
+  "tasks_evaluated": 0,
+  "pass_at_2": 0.0,
+  "hallucination_rate": 0.0,
+  "abstain_rate": 0.0,
+  "mttr_hours": null,
+  "note": "No benchmark results yet. Append rows to benchmarks/results.jsonl."
+}

@@ -1,0 +1,22 @@
+default_lane:
+  name: deepseek-default
+  provider: openrouter
+  model: deepseek/deepseek-v3.1-terminus:exacto
+  use_for:
+    - general reasoning
+    - code review and editing
+    - vigil analysis
+    - evaluator gate decisions
+    - learning loop scoring
+    - health summaries
+    - benchmark evaluation
+
+escalation_lane:
+  name: sonnet-escalation
+  provider: openrouter
+  model: anthropic/claude-sonnet-4-6
+  use_only_when:
+    - high_risk_decision
+    - unresolved_conflict
+    - legal_financial_security_impact
+    - explicit_gayatri_approval_required

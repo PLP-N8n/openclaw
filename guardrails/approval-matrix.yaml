@@ -1,0 +1,28 @@
+risk_tiers:
+  low:
+    auto_allowed:
+      - "read-only inspection"
+      - "non-destructive code edits"
+      - "local tests and diagnostics"
+  med:
+    ask_required_unless_preapproved:
+      - "scheduler/cron changes"
+      - "baseline/policy changes"
+      - "remote state writes"
+  high:
+    always_ask:
+      - "secrets/token actions"
+      - "destructive operations"
+      - "security posture changes"
+
+abstain_policy:
+  when_uncertain: true
+  when_evidence_missing: true
+
+output_schema:
+  operator_trace_fields:
+    - decision
+    - why
+    - evidence_source
+    - risk_level
+    - next_action

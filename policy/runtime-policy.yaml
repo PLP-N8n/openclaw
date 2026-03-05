@@ -1,0 +1,15 @@
+identity_sources:
+  - ../SOUL.md
+  - ../SOVEREIGN_DIRECTIVES.md
+
+runtime_rules:
+  abstain_on_unknown: true
+  no_invented_biography: true
+  enforce_identity_continuity: true
+  require_schema_validation: true
+  require_evidence_for_high_stakes: true
+
+execution_modes:
+  low_risk: auto
+  medium_risk: ask_unless_preapproved
+  high_risk: always_ask

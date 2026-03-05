@@ -1,0 +1,7 @@
+ventures:
+  - name: openclaw
+    status: active
+    kpi_source: ../logs
+  - name: bhairav-core
+    status: active
+    kpi_source: ../bhairav-core
